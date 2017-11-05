@@ -65,7 +65,9 @@
   "keywords": [
     "vscode",
     "vsc",
-    "extension"
+    "extension",
+    "browser",
+    "refresh"
   ],
   "categories": [
     "Other"
