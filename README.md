@@ -1,4 +1,4 @@
-# VSC Browser Refresh
+# Browser Refresh
 
 <p align="center">
 	<img src="https://raw.githubusercontent.com/fabiospampinato/vscode-browser-refresh/master/resources/logo-128x128.png" alt="Logo">
@@ -10,10 +10,10 @@ It's currently implemented using an AppleScript, which makes this extension **ma
 
 ## Install
 
-Run the following in the command palette:
+Follow the instructions in the [Marketplace](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-browser-refresh), or run the following in the command palette:
 
 ```shell
-ext install vscode-browser-refresh
+ext install fabiospampinato.vscode-browser-refresh
 ```
 
 ## Usage
