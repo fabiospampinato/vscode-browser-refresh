@@ -8,7 +8,8 @@
   "main": "out/src/extension.js",
   "publisher": "fabiospampinato",
   "activationEvents": [
-    "onCommand:browserRefresh.refresh"
+    "onCommand:browserRefresh.refresh",
+    "onCommand:browserRefresh.forceRefresh"
   ],
   "contributes": {
     "configuration": {
@@ -36,6 +37,10 @@
       {
         "command": "browserRefresh.refresh",
         "title": "Browser: Refresh"
+      },
+      {
+        "command": "browserRefresh.forceRefresh",
+        "title": "Browser: Force Refresh"
       }
     ],
     "keybindings": [
@@ -43,6 +48,11 @@
         "command": "browserRefresh.refresh",
         "key": "ctrl+r",
         "mac": "cmd+r"
+      },
+      {
+        "command": "browserRefresh.forceRefresh",
+        "key": "shift+ctrl+r",
+        "mac": "shift+cmd+r"
       }
     ]
   },
