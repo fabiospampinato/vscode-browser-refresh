@@ -18,16 +18,18 @@ ext install fabiospampinato.vscode-browser-refresh
 
 ## Usage
 
-It adds 1 command to the command palette:
+It adds 2 commands to the command palette:
 
 ```js
 Browser: Refresh // Refresh the browser
+Browser: Force Refresh // Force refresh the browser
 ```
 
-It adds 1 shortcut:
+It adds 2 shortcuts:
 
 ```js
 Cmd+R // Refresh the browser
+Shift+Cmd+R // Force refresh the browser
 ```
 
 ## Settings
