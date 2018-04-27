@@ -10,7 +10,7 @@ import Utils from './utils';
 
 function refresh () {
 
-  const {browser, delay} = Config.get (),
+  const {browser, delay, focus} = Config.get (),
         app = Utils.isInsiders () ? 'Visual Studio Code - Insiders' : 'Visual Studio Code';
 
   const refreshScript = `
@@ -18,8 +18,8 @@ function refresh () {
       tell application "${browser}" to activate
       delay ${delay}
       key code 15 using {command down} # ⌘R
+      ${ focus ? '' : `do shell script "open -a \\"${app}\\""` }
     end tell
-    do shell script "open -a \\"${app}\\"" # In order to focus ONLY to the previous window
   `;
 
   applescript.execString ( refreshScript );

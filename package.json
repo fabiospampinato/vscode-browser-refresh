@@ -24,6 +24,11 @@
           "type": "number",
           "description": "Delay after which ⌘R will be sent to the browser",
           "default": 0
+        },
+        "browserRefresh.focus": {
+          "type": "boolean",
+          "description": "Keep the focus on the browser",
+          "default": false
         }
       }
     },
