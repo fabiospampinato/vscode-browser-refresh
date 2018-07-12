@@ -1,3 +1,6 @@
+### Version 1.1.2
+- Improved the applescript used
+
 ### Version 1.1.1
 - Updated readme
 
