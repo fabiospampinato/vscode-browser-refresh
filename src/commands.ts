@@ -2,7 +2,6 @@
 /* IMPORT */
 
 import * as applescript from 'applescript';
-import * as vscode from 'vscode';
 import Config from './config';
 import Utils from './utils';
 
@@ -14,12 +13,12 @@ function refresh ( force ) {
         app = Utils.isInsiders () ? 'Visual Studio Code - Insiders' : 'Visual Studio Code';
 
   const refreshScript = `
+    tell application "${browser}" to activate
     tell application "System Events"
-      tell application "${browser}" to activate
       delay ${delay}
       key code 15 using {command down ${ force ? ', shift down' : '' }} # ⌘R/⇧⌘R
-      ${ focus ? '' : `do shell script "open -a \\"${app}\\""` }
     end tell
+    ${ focus ? '' : `tell application "${app}" to activate` }
   `;
 
   applescript.execString ( refreshScript );
