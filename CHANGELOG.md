@@ -1,3 +1,6 @@
+### Version 1.1.3
+- Bundling with webpack
+
 ### Version 1.1.2
 - Improved the applescript used
 
