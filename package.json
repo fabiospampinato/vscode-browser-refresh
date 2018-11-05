@@ -3,7 +3,7 @@
   "displayName": "Browser Refresh",
   "description": "Refresh the browser with a ⌘R, right from Code. No need to switch focus to it.",
   "icon": "resources/logo-128x128.png",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "license": "MIT",
   "main": "out/extension.js",
   "publisher": "fabiospampinato",
