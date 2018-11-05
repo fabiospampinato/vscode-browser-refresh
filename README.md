@@ -1,7 +1,7 @@
 # Browser Refresh
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/fabiospampinato/vscode-browser-refresh/master/resources/logo-128x128.png" alt="Logo">
+	<img src="https://raw.githubusercontent.com/fabiospampinato/vscode-browser-refresh/master/resources/logo.png" width="128" alt="Logo">
 </p>
 
 Refresh the browser with a ⌘R, right from Code. No need to switch focus to it.
