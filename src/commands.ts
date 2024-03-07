@@ -1,21 +1,21 @@
 
 /* IMPORT */
 
-import Script from './script';
+import {applescript, getOptions, getScript} from './utils';
 
-/* COMMANDS */
+/* MAIN */
 
-function refresh ( force: boolean ) {
+const refresh = ( force?: boolean ): void => {
 
-  Script.exec ( Script.get ( force ) );
+  applescript ( getScript ( getOptions ( !!force ) ) );
 
-}
+};
 
-function forceRefresh () {
+const forceRefresh = (): void => {
 
-  return refresh ( true );
+  refresh ( true );
 
-}
+};
 
 /* EXPORT */
 

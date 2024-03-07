@@ -1,7 +1,4 @@
 ### Version 1.2.0
-- Moved "@types/*" to "dependencies"
-- Replaced tabs with spaces
-- Update .github/FUNDING.yml
 - Reloading some supported browsers directly via AppleScript without switching the focus
 
 ### Version 1.1.5

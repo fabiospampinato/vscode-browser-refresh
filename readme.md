@@ -21,32 +21,26 @@ ext install fabiospampinato.vscode-browser-refresh
 It adds 2 commands to the command palette:
 
 ```js
-Browser: Refresh // Refresh the browser
-Browser: Force Refresh // Force refresh the browser
+'Browser: Refresh' // Refresh the browser
+'Browser: Force Refresh' // Force refresh the browser
 ```
 
 It adds 2 shortcuts:
 
 ```js
-Cmd+R // Refresh the browser
-Shift+Cmd+R // Force refresh the browser
+'Cmd+R' // Refresh the browser
+'Shift+Cmd+R' // Force refresh the browser
 ```
 
 ## Settings
 
 ```js
 {
-  "browserRefresh.browser": "Google Chrome" // The browser to refresh
+  "browserRefresh.browser": "Google Chrome", // The browser to refresh
   "browserRefresh.delay": 0, // Delay after which ⌘R will be sent to the browser
   "browserRefresh.focus": false // Keep the focus on the browser
 }
 ```
-
-## Contributing
-
-If you found a problem, or have a feature request, please open an [issue](https://github.com/fabiospampinato/vscode-browser-refresh/issues) about it.
-
-If you want to make a pull request you can debug the extension using [Debug Launcher](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-debug-launcher).
 
 ## License
 
