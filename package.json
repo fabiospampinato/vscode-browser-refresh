@@ -5,7 +5,7 @@
   "repository": "github:fabiospampinato/vscode-browser-refresh",
   "description": "Refresh the browser with a ⌘R, right from Code. No need to switch focus to it.",
   "icon": "resources/logo-128x128.png",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "dist/index.js",
   "contributes": {
     "configuration": {
