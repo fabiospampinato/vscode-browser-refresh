@@ -33,7 +33,7 @@ const getOptions = ( force: boolean ): Options => {
 
   const config = getConfig ( 'browserRefresh' );
   const browser = isString ( config?.browser ) ? config.browser : 'Google Chrome';
-  const delay = isNumber ( config?.delay ) ? config.delay : 0;
+  const delay = isNumber ( config?.delay ) ? config.delay / 1000 : 250;
   const focus = isBoolean ( config?.focus ) ? config.focus : false;
   const options = { browser, delay, focus, force };
 

@@ -19,7 +19,7 @@
         },
         "browserRefresh.delay": {
           "type": "number",
-          "description": "Delay after which ⌘R will be sent to the browser",
+          "description": "Delay after which ⌘R will be sent to the browser, in milliseconds",
           "default": 0
         },
         "browserRefresh.focus": {

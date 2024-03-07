@@ -37,7 +37,7 @@ It adds 2 shortcuts:
 ```js
 {
   "browserRefresh.browser": "Google Chrome", // The browser to refresh
-  "browserRefresh.delay": 0, // Delay after which ⌘R will be sent to the browser
+  "browserRefresh.delay": 250, // Delay after which ⌘R will be sent to the browser, in milliseconds
   "browserRefresh.focus": false // Keep the focus on the browser
 }
 ```
