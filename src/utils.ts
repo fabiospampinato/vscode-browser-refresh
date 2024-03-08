@@ -64,9 +64,10 @@ const getScriptGeneric = ( options: Options ): string => {
 
 const getScriptSpecific = ( options: Options ): string | undefined => {
 
-  const {browser, force} = options;
+  const {browser, force, focus} = options;
 
   if ( force ) return;
+  if ( focus ) return;
 
   if ( browser === 'Google Chrome' ) {
     return 'tell application "Google Chrome" to reload active tab of front window';
