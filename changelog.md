@@ -1,3 +1,6 @@
+### Version 2.0.2
+- Ensuring the "focus" setting is respected
+
 ### Version 2.0.1
 - Improved general refreshing applescript, allowing a short delay by default for switching focus
 - Ensuring force-refreshing actually force-refreshes the tab
