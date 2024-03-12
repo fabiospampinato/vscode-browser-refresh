@@ -1,31 +1,14 @@
 
 /* IMPORT */
 
-import {execFile} from 'node:child_process';
-import {getConfig, isInsiders} from 'vscode-extras';
+import {exec, getConfig, isInsiders} from 'vscode-extras';
 import type {Options} from './types';
 
 /* MAIN */
 
-const applescript = ( script: string ): Promise<string> => {
+const applescript = async ( script: string ): Promise<void> => {
 
-  return new Promise ( ( resolve, reject ) => {
-
-    execFile ( 'osascript', ['-e', script], ( error, stdout, stderr ) => {
-
-      if ( error ) {
-
-        reject ( error );
-
-      } else {
-
-        resolve ( stdout );
-
-      }
-
-    });
-
-  });
+  await exec ( 'osascript', ['-e', script] );
 
 };
 
@@ -69,15 +52,15 @@ const getScriptSpecific = ( options: Options ): string | undefined => {
   if ( force ) return;
   if ( focus ) return;
 
-  if ( browser === 'Google Chrome' ) {
+  if ( browser === 'Google Chrome' || browser === 'chrome' ) {
     return 'tell application "Google Chrome" to reload active tab of front window';
   }
 
-  if ( browser === 'Microsoft Edge' ) {
+  if ( browser === 'Microsoft Edge' || browser === 'edge' ) {
     return 'tell application "Microsoft Edge" to reload active tab of front window';
   }
 
-  if ( browser === 'Safari' ) {
+  if ( browser === 'Safari' || browser === 'safari' ) {
     return 'tell application "Safari" to set URL of current tab of front window to (URL of current tab of front window)';
   }
 
