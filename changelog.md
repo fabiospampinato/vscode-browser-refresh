@@ -9,7 +9,7 @@
 - Ensuring force-refreshing actually force-refreshes the tab
 
 ### Version 2.0.0
-- Rewitten: more modern code, no third-party dependencies, 98% smaller bundle
+- Rewritten: more modern code, no third-party dependencies, 98% smaller bundle
 
 ### Version 1.2.0
 - Reloading some supported browsers directly via AppleScript without switching the focus
