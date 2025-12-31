@@ -39,6 +39,7 @@ const getScriptGeneric = ( options: Options ): string => {
       delay ${options.delay}
       key code 15 using {command down ${options.force ? ', shift down' : ''}} # ⌘R/⇧⌘R
     end tell
+    delay 0.125
     ${options.focus ? '' : `tell application "${app}" to activate`}
   `;
 
